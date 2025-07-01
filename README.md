@@ -1,7 +1,13 @@
-# uirp-hackathon
+# Remaining Useful Life (RUL)
+![](https://play-lh.googleusercontent.com/7pYpIOAKj-nqcGQClV7V2JBq_sPZWg2AzDJUMW3P1maHwvldlz0vCay3txVoFDM18lw)
+## Overview
+This project develops a machine learning model to accurately predict when an John Deere tractor will break and what specific part will fail. Using sensor telemetry, maintenance history, and model information, the model provides necessary foresight to act proactively. This feature lies under the *Analyze* section of the John Deere Operations Center.
 
-## Generating Synthetic Data
-Due to privacy reasons, we were unable to access authentic John Deere tractor sensor readings. As a result, we created our own hyper-realistic data. Below is how we did that.
+![](https://www.legalreader.com/wp-content/uploads/2017/03/Tractor_john_deere-8320R.jpg)
+
+## Model Training and Data Collection
+### Generating Synthetic Data
+Due to privacy reasons, we were unable to access authentic John Deere tractor sensor readings. As a result, we created our own hyper-realistic data. Below is how we did that in `generate_synthetic_data.py`.
 
 #### 1. Simulating a Realistic Environment
 To make the data authentic, the script doesn't just generate random numbers. It models real-world conditions relevant to farming in Champaign, IL.
@@ -17,9 +23,9 @@ The script iterates through each month for each tractor, simulating its life unt
 	- If the tractor is operating normally, sensor values are generated randomly within their defined `SENSOR_BASELINES`.
 	- **If a failure is approaching**, the script consults the `FAILURE_TRENDS`, intentionally altering the values of the relevant sensors, making the deviation more extreme as the tractor gets closer to the failure point.
 
-## Machine Learning Model
 
-### Abstract
+### Machine Learning Model
+
 The main goal of our model is to predict the **Remaining Useful Life (RUL)** of a John Deere Tractor based on sensor data over time. The model uses an **XGBoost Regressor** to make these predictions. Below is a step-by-step description of how it works.
 
 #### 1. Data Loading and Combining
@@ -29,7 +35,7 @@ First, the script loads data from two separate folders: `training_data_csv` and 
 - All these individual DataFrames are then combined into a single, large training dataset
 - This process is repeated for the validation data
 #### 2. Feature Engineering
-This is the most critical part of the script, handled by the `preprocess_and_engineer_features` function. The raw sensor data isn't enough to make accurate predictions; the model needs features that describe trends and changes over time. This function creates new features based on the existing numerical columns for each unique `sample_id` (representing a single machine).
+The raw sensor data isn't enough to make accurate predictions; the model needs features that describe trends and changes over time. This function creates new features based on the existing numerical columns for each unique `sample_id` (representing a single machine).
 - **Lag Features:** Creates columns with values from previous time steps (e.g., the sensor reading from 1, 2, and 3 time steps ago). This helps the model see the recent history of each sensor.
 - **Rolling Statistics:** Calculates the `mean`, `standard deviation`, `min`, and `max` over a moving window of time (e.g., the last 5, 10, or 20 readings). This helps smooth out noise and identify recent trends.
 - **Rate of Change (Differencing):** Finds the difference between the current reading and a past reading (e.g., 1 or 3 steps ago). This essentially calculates the "velocity" or momentum of a sensor's readings.
@@ -64,3 +70,8 @@ Our highest performing model had these statistics on never-before-seen data:
 
 #### 5. Saving the Model
 The script uses `joblib.dump` to save the fully trained and tuned `best_model` to a file named `mae_403.joblib`. This saved file can be loaded later to make predictions on new data without having to go through the entire training and tuning process again.
+
+## User Interface
+TODO
+
+## Backend
