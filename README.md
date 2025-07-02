@@ -5,6 +5,8 @@ This project develops a machine learning model to accurately predict when an Joh
 
 ![](https://www.legalreader.com/wp-content/uploads/2017/03/Tractor_john_deere-8320R.jpg)
 
+Youtube Video: ![](https://youtu.be/D9VeQEKnJwU)
+
 ## Model Training and Data Collection
 ### Generating Synthetic Data
 Due to privacy reasons, we were unable to access authentic John Deere tractor sensor readings. As a result, we created our own hyper-realistic data. Below is how we did that in `generate_synthetic_data.py`.
