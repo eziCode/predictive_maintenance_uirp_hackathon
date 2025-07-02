@@ -1,4 +1,4 @@
-# Remaining Useful Life (RUL)
+# Remaining Useful Life (RUL) Tool 
 ![](https://play-lh.googleusercontent.com/7pYpIOAKj-nqcGQClV7V2JBq_sPZWg2AzDJUMW3P1maHwvldlz0vCay3txVoFDM18lw)
 ## Overview
 This project develops a machine learning model to accurately predict when an John Deere tractor will break and what specific part will fail. Using sensor telemetry, maintenance history, and model information, the model provides necessary foresight to act proactively. This feature lies under the *Analyze* section of the John Deere Operations Center.
@@ -102,10 +102,10 @@ The front-end interface is a user-friendly dashboard designed for monitoring and
 #### 6. Machine Overview Section (Sidebar)
 - Visual Aid: Image of the selected machine (X9 1000).
 - Specs Summary: Key technical specs listed, including:
-- Unload rate
-- Grain tank capacity
-- Engine type
-- Horsepower
+        - Unload rate
+        - Grain tank capacity
+        - Engine type
+        - Horsepower
 
 
 
