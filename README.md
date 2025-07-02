@@ -5,7 +5,7 @@ This project develops a machine learning model to accurately predict when an Joh
 
 ![](https://www.legalreader.com/wp-content/uploads/2017/03/Tractor_john_deere-8320R.jpg)
 
-Youtube Video: [![RUL Predictor (UIRP Hackathon)]](https://youtu.be/D9VeQEKnJwU)
+Youtube Video: [![RUL Predictor(UIRP Hackathon)]()](https://youtu.be/D9VeQEKnJwU)
 
 
 ## Model Training and Data Collection
