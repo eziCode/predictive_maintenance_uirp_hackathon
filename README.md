@@ -72,6 +72,40 @@ Our highest performing model had these statistics on never-before-seen data:
 The script uses `joblib.dump` to save the fully trained and tuned `best_model` to a file named `mae_403.joblib`. This saved file can be loaded later to make predictions on new data without having to go through the entire training and tuning process again.
 
 ## User Interface
-TODO
+The front-end interface is a user-friendly dashboard designed for monitoring and predicting machine maintenance needs, particularly for agricultural machinery such as the John Deere X9 1000 combine harvester. The layout is clean and logically divided into functional sections for easy interaction and real-time decision-making. Key features include:
 
-## Backend
+#### 1. Machine Model Selection Dropdown
+- Component: Dropdown menu labeled "Select Model"
+- Functionality: Allows users to choose between different machine models for analysis (e.g., X9 1000).
+- Associated Action: An “Analyze” button triggers prediction or data retrieval based on the selected model.
+
+#### 2. RUL Prediction Output
+- Main Highlight: Displays an Expected Operational Hours value before potential failure (e.g., “3247 Operational Hours”).
+- Priority Indicator: Visual priority level (e.g., Low) helps users gauge urgency at a glance.
+
+#### 3. Maintenance Scheduler
+- Component: A clearly visible green button titled “Schedule Maintenance.”
+- Functionality: Allows users to proactively plan and book service appointments based on prediction data.
+
+#### 4. Data Input Field
+- Component: "Select Data" autocomplete input.
+- Purpose: Lets users input specific telemetry, environmental, or usage data for custom analysis or exploration.
+
+#### 5. Past Maintenance History Table
+- Structure: Displays a scrollable and paginated table showing historical service data.
+
+- Columns:
+- Date: Timestamp of maintenance events.
+- Component: Affected machinery part (e.g., Engine, Brakes).
+- Maintenance Notes: Descriptions of actions performed (e.g., “Oil changed, filter replaced”).
+
+#### 6. Machine Overview Section (Sidebar)
+- Visual Aid: Image of the selected machine (X9 1000).
+- Specs Summary: Key technical specs listed, including:
+- Unload rate
+- Grain tank capacity
+- Engine type
+- Horsepower
+
+
+
