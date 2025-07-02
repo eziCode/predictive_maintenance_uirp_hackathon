@@ -1,4 +1,4 @@
-# Remaining Useful Life (RUL) Tool 
+# Remaining Useful Life (RUL) Prediction
 ![](https://play-lh.googleusercontent.com/7pYpIOAKj-nqcGQClV7V2JBq_sPZWg2AzDJUMW3P1maHwvldlz0vCay3txVoFDM18lw)
 ## Overview
 This project develops a machine learning model to accurately predict when an John Deere tractor will break and what specific part will fail. Using sensor telemetry, maintenance history, and model information, the model provides necessary foresight to act proactively. This feature lies under the *Analyze* section of the John Deere Operations Center.
@@ -101,7 +101,17 @@ The front-end interface is a user-friendly dashboard designed for monitoring and
 
 #### 6. Machine Overview Section (Sidebar)
 - Visual Aid: Image of the selected machine (X9 1000).
-- Specs Summary: Key technical specs listed, including: Unload rate, Grain tank capacity, Engine type and Horsepower
+- Specs Summary: Key technical specs listed, including:
+- Unload rate
+- Grain tank capacity
+- Engine type
+- Horsepower
 
-
+## Collaborators
+- Manasi Mangalvedhe: incoming senior at UIUC, Analytics & Accounting Intern at John Deere
+- Vedha Bant: incoming junior at UIUC, Data Science Intern at John Deere
+- Emily Park: incoming junior at UIUC, SWE Intern at John Deere
+- Kavya Puranam: incoming PhD student at UIUC, Data Science Intern at John Deere
+- Ezra Akresh: incoming freshman at Goergia Tech, Intern at PowerWorld
+- Oren Akresh: incoming junior at Academy High, Intern at Singleton Law Firm
 
