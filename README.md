@@ -101,11 +101,7 @@ The front-end interface is a user-friendly dashboard designed for monitoring and
 
 #### 6. Machine Overview Section (Sidebar)
 - Visual Aid: Image of the selected machine (X9 1000).
-- Specs Summary: Key technical specs listed, including:
-        - Unload rate
-        - Grain tank capacity
-        - Engine type
-        - Horsepower
+- Specs Summary: Key technical specs listed, including: Unload rate, Grain tank capacity, Engine type and Horsepower
 
 
 
