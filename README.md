@@ -7,10 +7,6 @@ This project develops a machine learning model to accurately predict when an Joh
 
 Video Presentation: [![RUL Predictor(UIRP Hackathon)](https://i9.ytimg.com/vi/D9VeQEKnJwU/mqdefault.jpg?sqp=CNi8ksMG-oaymwEmCMACELQB8quKqQMa8AEB-AHMB4AC0AWKAgwIABABGDwgSyhyMA8=&rs=AOn4CLCi38-4ujq-CZ0XZOAd8HD6IG8TxQ)](https://youtu.be/D9VeQEKnJwU)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D9VeQEKnJwU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
 ## Model Training and Data Collection
 ### Generating Synthetic Data
 Due to privacy reasons, we were unable to access authentic John Deere tractor sensor readings. As a result, we created our own hyper-realistic data. Below is how we did that in `generate_synthetic_data.py`.
