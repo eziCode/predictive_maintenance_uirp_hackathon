@@ -7,6 +7,8 @@ This project develops a machine learning model to accurately predict when an Joh
 
 Video Presentation: [![RUL Predictor(UIRP Hackathon)](https://i9.ytimg.com/vi/D9VeQEKnJwU/mqdefault.jpg?sqp=CNi8ksMG-oaymwEmCMACELQB8quKqQMa8AEB-AHMB4AC0AWKAgwIABABGDwgSyhyMA8=&rs=AOn4CLCi38-4ujq-CZ0XZOAd8HD6IG8TxQ)](https://youtu.be/D9VeQEKnJwU)
 
+![](https://play-lh.googleusercontent.com/7pYpIOAKj-nqcGQClV7V2JBq_sPZWg2AzDJUMW3P1maHwvldlz0vCay3txVoFDM18lw)
+
 
 ## Model Training and Data Collection
 ### Generating Synthetic Data
