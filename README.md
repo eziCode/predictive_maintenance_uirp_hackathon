@@ -111,7 +111,7 @@ The front-end interface is a user-friendly dashboard designed for monitoring and
 
 ## Collaborators
 - Manasi Mangalvedhe: incoming senior at UIUC, Analytics & Accounting Intern at John Deere
-- Vedha Bant: incoming junior at UIUC, Data Science Intern at John Deere
+- Vedha Pant: incoming junior at UIUC, Data Science Intern at John Deere
 - Emily Park: incoming junior at UIUC, SWE Intern at John Deere
 - Kavya Puranam: incoming PhD student at UIUC, Data Science Intern at John Deere
 - Ezra Akresh: incoming freshman at Goergia Tech, Intern at PowerWorld
