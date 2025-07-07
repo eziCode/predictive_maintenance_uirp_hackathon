@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ShowDataVisualization: FC<{dataVisualization: string}> = ({dataVisualization}) => (
     <Card>
-        <div style={{ position: 'relative', width: '100%', minHeight: '250px' }}>
+        <div style={{ position: 'relative', width: '100%', aspectRatio: '18.2/9' }}>
             {dataVisualization === 'Engine Temperature' && (
                 <Image
                     alt={'Engine Temperature Visualization'}
